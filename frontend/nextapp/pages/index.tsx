@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 import type { NextPage } from 'next'
+=======
+>>>>>>> 5165d21b199a78916574a30bf17ef88e33086942
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+<<<<<<< HEAD
 const Home: NextPage = () => {
+=======
+export default function Home() {
+>>>>>>> 5165d21b199a78916574a30bf17ef88e33086942
   return (
     <div className={styles.container}>
       <Head>
@@ -43,6 +50,11 @@ const Home: NextPage = () => {
 
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+<<<<<<< HEAD
+=======
+            target="_blank"
+            rel="noopener noreferrer"
+>>>>>>> 5165d21b199a78916574a30bf17ef88e33086942
             className={styles.card}
           >
             <h2>Deploy &rarr;</h2>
@@ -68,5 +80,8 @@ const Home: NextPage = () => {
     </div>
   )
 }
+<<<<<<< HEAD
 
 export default Home
+=======
+>>>>>>> 5165d21b199a78916574a30bf17ef88e33086942
