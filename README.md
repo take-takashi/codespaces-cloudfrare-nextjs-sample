@@ -38,3 +38,9 @@ mv frontend frontend@next13error
 ```
 mv frontend@next12 frontend
 ```
+
+### .node_version ファイルで NODE のバージョンを指定する
+
+```
+echo 17.6.0 >> frontend/nextapp/.node_version
+```
