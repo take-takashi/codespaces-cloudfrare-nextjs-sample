@@ -1,15 +1,10 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
-
-type Data = {
-  name: string
-}
+import type { NextRequest } from 'next/server'
 
 export const config = {
   runtime: 'experimental-edge',
 }
 
-export default async function handler(req: NextApiRequest) {
+export default function handler(req: NextRequest) {
   return new Response(JSON.stringify({ name: 'John Doe' }), {
     status: 200,
     headers: {
