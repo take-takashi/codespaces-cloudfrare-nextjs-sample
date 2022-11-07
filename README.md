@@ -2,6 +2,15 @@
 
 Cloudfrare に Next.js をデプロイするサンプル
 
+# 試した結果結論
+
+- Next13 は 2022/11/08 現在、Cloudfrare pages にデプロイできない。
+
+  なので Next12 にダウングレードする。
+
+- api routes を Edge runtime 用に書き換える。
+- node のバージョンを 17.6.0 にする。（node18 が 2022/11/08 時点デプロイエラーのため）
+
 ## frontend setup
 
 ```
@@ -39,8 +48,13 @@ mv frontend frontend@next13error
 mv frontend@next12 frontend
 ```
 
-### .node_version ファイルで NODE のバージョンを指定する
+### .node-version ファイルで NODE のバージョンを指定する
 
 ```
-echo 17.6.0 >> frontend/nextapp/.node_version
+# nextプロジェクトのルートに配置すること
+echo 17.6.0 >> frontend/nextapp/.node-version
 ```
+
+# 参考 URL
+
+- [Cloudflare Pages で Next.js の Edge Runtime がサポートされました \| DevelopersIO](https://dev.classmethod.jp/articles/cloudflare-pages-support-nextjs-edge-runtime/)
