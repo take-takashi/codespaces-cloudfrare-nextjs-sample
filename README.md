@@ -29,4 +29,12 @@ mv frontend frontend@next12
 ```
 mkdir frontend && cd frontend/
 npx create-next-app nextapp --ts --use-npm
+mv frontend frontend@next13error
+# やっぱりNext.js 13ではエラーでcloudfrareにデプロイできない。
+```
+
+### 動くバージョンに戻る
+
+```
+mv frontend@next12 frontend
 ```
